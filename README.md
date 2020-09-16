@@ -7,18 +7,30 @@ Things you may want to cover:
 
 * Ruby version
 
-* System dependencies
+  - Ruby 2.7.0
+  - Rails 6.0.3.3
 
-* Configuration
+* Database Configuration
+  - install postgresql
+
+  Copy the sample database.yml file and edit the database configuration as required.
+
+  - cp config/database.yml.sample config/database.yml
 
 * Database creation
+  - rake db:create
+  - rake db:migrate
 
-* Database initialization
+* Start the Rails server
+  You can start the rails server using the command given below.
+  - rails server
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
+  And now you can visit the site with the URL http://localhost:3000
 
 * Deployment instructions
+  - These below files don't need to push in the branch.
+   - config/database.yml
+   - db/schema.rb
+   - Gemfile.lock
 
 * ...

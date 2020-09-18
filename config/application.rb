@@ -8,6 +8,17 @@ Bundler.require(*Rails.groups)
 
 module RubyOnRailsBoilerPlate
   class Application < Rails::Application
+
+    config.middleware.use Rack::Cors do
+      allow do
+        origins '*'
+        resource '*',
+        headers: :any,
+        expose: ['access-token', 'expiry', 'token-type', 'uid', 'client'],
+        methods: [:get, :post, :options, :delete, :put, :patch]
+      end
+    end
+
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
 

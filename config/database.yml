@@ -1,0 +1,22 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  user_name: <%= Rails.application.credentials.database[:user_name] %>
+  password: <%= Rails.application.credentials.database[:password] %>
+
+development:
+  <<: *default
+  database: boiler_plate_development
+
+test:
+  <<: *default
+  database: boiler_plate_test
+
+staging:
+  <<: *default
+  database: boiler_plate_staging
+
+production:
+  <<: *default
+  database: boiler_plate_production

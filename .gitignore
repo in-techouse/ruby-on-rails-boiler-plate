@@ -80,3 +80,5 @@ pickle-email-*.html
 /config/credentials/production.key
 
 /config/credentials/staging.key
+
+/config/master.key

@@ -18,6 +18,6 @@
 6. Install `postgresql`.
 7. Create a user with username and password specified in `credentials` file.
 8. Create database specified `config/database.yml`.
-9. Create `config/master.key`, `config/credentials/development.key`, `config/credentials/staging.key`, and `config/credentials/production.key`, or you can recreate it.
+9. Create `config/master.key`, `config/credentials/development.key`, `config/credentials/staging.key`, and `config/credentials/production.key`.
 10. Ask the developer about the `KEYS`, or you can recreate it.
 11. Start the server, `rails s`

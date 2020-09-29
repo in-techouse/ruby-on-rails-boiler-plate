@@ -33,4 +33,10 @@ Things you may want to cover:
    - db/schema.rb
    - Gemfile.lock
 
+* Facebook Omniauth and Google auth
+  - For facebook add 'APP_ID' and 'SECRET_ID' and 'CALL_BACK_URL' in devise.rb
+  - For Google omniauth add 'GOOGLE_OAUTH_CLIENT_ID' and 'GOOGLE_OAUTH_CLIENT_SECRET' in devise.rb file.
+
+* Email Configurations
+  Add email and password in development.rb file to use the default emails of devise.
 * ...

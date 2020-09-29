@@ -1,2 +1,14 @@
 <h3>Welcome On BoilerPlate</h3>
-<%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+
+<% if admin_signed_in? %>
+  <%= link_to('Go To Dashboard', administrator_root_path) %><br><br>
+  <%= link_to('Logout', destroy_admin_session_path, method: :delete) %>
+<% elsif user_signed_in? %>
+  <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+<% else %>
+  <%= link_to 'Sign In', new_user_session_path %>
+  <%= link_to "Sign in with Google", user_google_oauth2_omniauth_authorize_path %>
+  <%= link_to "Sign in with Facebook", user_facebook_omniauth_authorize_path %>
+<% end %>
+
+

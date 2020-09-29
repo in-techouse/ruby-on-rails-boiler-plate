@@ -14,6 +14,12 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'devise', '~> 4.7', '>= 4.7.2'
 gem 'devise_token_auth', '~> 1.1', '>= 1.1.4'
 gem 'rack-cors', '~> 1.1', '>= 1.1.1'
+gem 'administrate', '~> 0.14.0'
+gem 'administrate-field-active_storage', '~> 0.3.5'
+gem 'image_processing', '~> 1.12'
+gem 'omniauth'
+gem 'omniauth-google-oauth2'
+gem 'omniauth-facebook'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

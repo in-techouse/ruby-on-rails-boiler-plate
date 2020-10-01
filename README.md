@@ -1,42 +1,23 @@
-# README
+# Ruby on Rails Boiler Plate
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Ruby on Rails Application Dependencies
 
-Things you may want to cover:
+- Ruby version, `2.7.0`
 
-* Ruby version
+- Rails version, `6.0.0`
 
-  - Ruby 2.7.0
-  - Rails 6.0.3.3
+- Database used, `postgresql`
 
-* Database Configuration
-  - install postgresql
+### Installation Steps
 
-  Copy the sample database.yml file and edit the database configuration as required.
-
-  - cp config/database.yml.sample config/database.yml
-
-* Database creation
-  - rake db:create
-  - rake db:migrate
-
-* Start the Rails server
-  You can start the rails server using the command given below.
-  - rails server
-
-  And now you can visit the site with the URL http://localhost:3000
-
-* Deployment instructions
-  - These below files don't need to push in the branch.
-   - config/database.yml
-   - db/schema.rb
-   - Gemfile.lock
-
-* Facebook Omniauth and Google auth
-  - For facebook add 'APP_ID' and 'SECRET_ID' and 'CALL_BACK_URL' in devise.rb
-  - For Google omniauth add 'GOOGLE_OAUTH_CLIENT_ID' and 'GOOGLE_OAUTH_CLIENT_SECRET' in devise.rb file.
-
-* Email Configurations
-  Add email and password in development.rb file to use the default emails of devise.
-* ...
+1. Install `RVM`.
+2. Install `Ruby` version `2.7.0`.
+3. Create a `gemset`.
+4. Run `bundle install`.
+5. Run `yarn install`.
+6. Install `postgresql`.
+7. Create a user with username and password specified in `credentials` file.
+8. Create database specified `config/database.yml`.
+9. Create `config/master.key`, `config/credentials/development.key`, `config/credentials/staging.key`, and `config/credentials/production.key`.
+10. Ask the developer about the `KEYS`, or you can recreate it.
+11. Start the server, `rails s`

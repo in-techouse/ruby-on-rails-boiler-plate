@@ -78,8 +78,11 @@ pickle-email-*.html
 # vim artifacts
 **.swp
 
+#VSCode
+.vscode/
+
+# Ignore keys for decrypting credentials and more.
+/config/credentials/development.key
 /config/credentials/production.key
-
 /config/credentials/staging.key
-
 /config/master.key

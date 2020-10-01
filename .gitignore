@@ -49,6 +49,7 @@ db/*.sqlite3
 /spec/views
 /specifications
 /Gemfile.lock
+/storage
 /node_modules
 rerun.txt
 pickle-email-*.html
